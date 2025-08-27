@@ -3,6 +3,7 @@ body{
 }
 
 .container{
+max-width: 600px;
 text-align: center;
 padding: 6px;
 margin: 0 auto;
@@ -10,7 +11,13 @@ background-color: white;
 box-shadow: 5px 3px;
 margin-top: 10px;
 }
-  
+
+select{
+width: 100%;
+padding:10px;
+margin: 5px 3px;
+
+  }
 
 h1{
   text-align: center;
