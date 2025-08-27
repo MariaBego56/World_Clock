@@ -1,5 +1,6 @@
 body{
   background-color: #f2f0fc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
@@ -10,7 +11,6 @@ margin:  60px auto;
 border-radius: 10px;
 background-color: white;
 box-shadow: 7px 10px #d9d3fa;
-font-family: Arial, Helvetica, sans-serif;
 
 
 }
@@ -29,19 +29,30 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
 
 }
-.city{
-font-weight: bold;
-
-}
-.date{
+.city {
 margin: 0;
+display: flex;
+justify-content: space-between;
+
+}
+.date {
 line-height: 1.5;
+opacity: 0.7;
 
 }
 
-h2{
-  font-size: 32px;
+h2 {
+  font-size: 24px;
   font-weight: bold;
+}
+
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.time small{
+  vertical-align: middle;
 }
 
 footer{
