@@ -1,11 +1,12 @@
 body{
-  background-color: #d1caf8;
+  background-color: #f2f0fc;
 }
 
 .container{
 max-width: 600px;
 text-align: center;
 padding: 6px;
+margin-top: 20px;
 margin: 0 auto;
 background-color: white;
 box-shadow: 5px 3px;
