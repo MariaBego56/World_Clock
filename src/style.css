@@ -6,11 +6,11 @@ body{
 max-width: 600px;
 text-align: center;
 padding: 6px;
-margin: 40px auto 200px;
+margin: 40px auto;
 
 border-radius: 10px;
 background-color: white;
-box-shadow: 5px 10px #d9d3fa;
+box-shadow: 9px 7px #d9d3fa;
 margin-top: 10px;
 }
 
