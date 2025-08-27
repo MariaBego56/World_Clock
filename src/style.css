@@ -5,9 +5,8 @@ body{
 .container{
 max-width: 600px;
 text-align: center;
-padding: 6px;
+padding: 10px 6px;
 margin: 0px auto 40px;
-
 border-radius: 10px;
 background-color: white;
 box-shadow: 7px 7px #d9d3fa;
