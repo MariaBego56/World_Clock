@@ -10,7 +10,7 @@ margin:  60px auto;
 border-radius: 10px;
 background-color: white;
 box-shadow: 7px 10px #d9d3fa;
-
+font-family: Arial, Helvetica, sans-serif;
 
 
 }
@@ -28,6 +28,20 @@ h1{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 
+}
+.city{
+font-weight: bold;
+
+}
+.date{
+margin: 0;
+line-height: 1.5;
+
+}
+
+h2{
+  font-size: 32px;
+  font-weight: bold;
 }
 
 footer{
