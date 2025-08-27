@@ -18,7 +18,7 @@ box-shadow: 7px 10px #d9d3fa;
 select{
 border-radius: 4px;
 margin-top: 20px;
-width: 90%;
+width: 100%;
 padding:10px;
 font-size: 18px;
 
@@ -30,10 +30,11 @@ h1{
 
 }
 .city {
-margin: 0px 40;
+margin: 0px 40px;
 display: flex;
 justify-content: space-between;
-
+font-size: 28px;
+font-weight: bold;
 }
 .date {
 line-height: 1.5;
@@ -44,6 +45,7 @@ opacity: 0.7;
 h2 {
   font-size: 24px;
   font-weight: bold;
+  margin: 0 0 5px;
 }
 
 .time {
