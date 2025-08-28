@@ -30,29 +30,37 @@ h1{
 
 }
 .city-time {
-margin: 10px 10px;
+
 display: flex;
 justify-content: space-between;
-font-size: 28px;
-font-weight: bold;
-}
-.date {
-display: flex;
-opacity: 0.7;
-margin-left: 15px;
-
+align-items: center;
+gap: 10px;
+margin: 10px;
 }
 
-h2 {
+.city-date{
+  text-align: left;
+}
+
+.city h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-left: 5px;
+  margin: 0;
 }
+
+.date {
+  font-size: 16px;
+opacity: 0.7;
+margin-left: 2px;
+
+}
+
 
 .time {
   font-size: 36px;
   font-weight: bold;
  text-align: right;
+ white-space: nowrap;
 }
 
 .time small{
