@@ -34,8 +34,9 @@ h1{
 display: flex;
 justify-content: space-between;
 align-items: center;
-gap: 10px;
-margin: 10px;
+gap: 16px;
+margin-top: 30px;
+
 }
 
 .city-date{
