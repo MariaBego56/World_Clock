@@ -4,5 +4,5 @@ let losAngelesTimeElement = losAngelesElement(".time");
 let LosAngelesTime = moment().tz("America/Los_Angeles");
 
 
-losAngelesDateElement = moment().format("Do MMMM YYYY");
-losAngelesTimeElement = moment().format("h:mn:ss [<small>]A[</samall>]");
+losAngelesDateElement.innerHTML = moment().format("Do MMMM YYYY");
+losAngelesTimeElement.innerHTML = moment().format("h:mn:ss [<small>]A[</samall>]");
