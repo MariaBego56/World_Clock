@@ -1,19 +1,21 @@
 let losAngelesElement = document.querySelector("#los-angeles");
-let losAngelesDateElement = losAngelesElement(".date");
-let losAngelesTimeElement = losAngelesElement(".time");
-let LosAngelesCurrent = moment().tz("America/Los_Angeles");
-
-
-losAngelesDateElement.innerHTML = losAngelesCurrent.moment().format("Do MMMM YYYY");
-losAngelesTimeElement.innerHTML = losAngelesCurrent.moment().format("h:mn:ss [<small>]A[</samall>]");
-
+let losAngelesDateElement = losAngelesElement.querySelector(".date");
+let losAngelesTimeElement = losAngelesElement.querySelector(".time");
 
 
 let ParisElement = document.querySelector("#paris");
-let ParisDateElement = ParisElement(".date");
-let ParisTimeElement = ParisElement(".time");
+let ParisDateElement = ParisElement.querySelector(".date");
+let ParisTimeElement = ParisElement.querySelector(".time");
+
+function updateTimeDate(){
+
+let LosAngelesCurrent = moment().tz("America/Los_Angeles");
+losAngelesDateElement.innerHTML = LosAngelesCurrent.format("Do MMMM YYYY");
+losAngelesTimeElement.innerHTML = LosAngelesCurrent.format("h:mm:ss [<small>]A[</small>]");
+
 let ParisCurrent = moment().tz("Europe/Paris");
+ParisDateElement.innerHTML = ParisCurrent.format("Do MMMM YYYY");
+ParisTimeElement.innerHTML = ParisCurrent.format("h:mm:ss [<small>]A[</small>]");
 
 
-ParisDateElement.innerHTML = ParisCurrent.moment().format("Do MMMM YYYY");
-ParisTimeElement.innerHTML = ParisCurrent.moment().format("h:mn:ss [<small>]A[</samall>]");
+}
