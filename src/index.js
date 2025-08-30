@@ -19,3 +19,5 @@ ParisTimeElement.innerHTML = ParisCurrent.format("h:mm:ss [<small>]A[</small>]")
 
 
 }
+
+alert("hello");
