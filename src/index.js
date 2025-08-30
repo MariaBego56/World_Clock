@@ -1,6 +1,6 @@
-let losAngelesElement = document.querySelector("#los-angeles");
-let losAngelesDateElement = losAngelesElement.querySelector(".date");
-let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+let losAngeles = document.querySelector("#los-angeles");
+let losAngelesDate = losAngeles.querySelector(".date");
+let losAngelesTime = losAngeles.querySelector(".time");
 
 
 let ParisElement = document.querySelector("#paris");
@@ -10,8 +10,8 @@ let ParisTimeElement = ParisElement.querySelector(".time");
 function updateTimeDate(){
 
 let losAngelesCurrent = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML = losAngelesCurrent.format("Do MMMM YYYY");
-losAngelesTimeElement.innerHTML = losAngelesCurrent.format("h:mm:ss [<small>]A[</small>]");
+losAngelesDate.innerHTML = losAngelesCurrent.format("Do MMMM YYYY");
+losAngelesTime.innerHTML = losAngelesCurrent.format("h:mm:ss") + "<small>" + losAngelesCurrent.format("A") + "</small>";
 
 let ParisCurrent = moment().tz("Europe/Paris");
 ParisDateElement.innerHTML = ParisCurrent.format("Do MMMM YYYY");
