@@ -9,9 +9,9 @@ let ParisTimeElement = ParisElement.querySelector(".time");
 
 function updateTimeDate(){
 
-let LosAngelesCurrent = moment().tz("America/Los_Angeles");
-losAngelesDateElement.innerHTML = LosAngelesCurrent.format("Do MMMM YYYY");
-losAngelesTimeElement.innerHTML = LosAngelesCurrent.format("h:mm:ss [<small>]A[</small>]");
+let losAngelesCurrent = moment().tz("America/Los_Angeles");
+losAngelesDateElement.innerHTML = losAngelesCurrent.format("Do MMMM YYYY");
+losAngelesTimeElement.innerHTML = losAngelesCurrent.format("h:mm:ss [<small>]A[</small>]");
 
 let ParisCurrent = moment().tz("Europe/Paris");
 ParisDateElement.innerHTML = ParisCurrent.format("Do MMMM YYYY");
