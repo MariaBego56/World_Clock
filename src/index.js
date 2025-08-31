@@ -16,11 +16,10 @@ if (paris){
 let parisDate = paris.querySelector(".date");
 let parisTime = paris.querySelector(".time");
 let parisCurrent = moment().tz("Europe/Paris");
-``
+
 parisDate.innerHTML = parisCurrent.format("Do MMMM YYYY");
 parisTime.innerHTML = `${parisCurrent.format("h:mm:ss")}<small> ${parisCurrent.format("A") }</small>`;
 
-}
 }
 
 function updateCity(event) {
@@ -50,3 +49,4 @@ setInterval (updateTime, 1000);
 let citiesSelect = document.querySelector("#city-dropdown");
 
 citiesSelect. addEventListener("change", updateCity);
+}
