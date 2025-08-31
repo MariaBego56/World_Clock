@@ -56,7 +56,7 @@ border: none;
 }
 
 .date {
-  font-size: 16px;
+font-size: 16px;
 opacity: 0.7;
 margin-left: 2px;
 text-align: left;
@@ -64,10 +64,10 @@ text-align: left;
 
 
 .time {
-  font-size: 36px;
-  font-weight: bold;
- text-align: right;
- white-space: nowrap;
+font-size: 36px;
+font-weight: bold;
+text-align: right; 
+white-space: nowrap;
 }
 
 .time small{
