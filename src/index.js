@@ -8,18 +8,19 @@ let losAngelesTime = losAngeles.querySelector(".time");
 let losAngelesCurrent = moment().tz("America/Los_Angeles");
 
 losAngelesDate.innerHTML = losAngelesCurrent.format("Do MMMM YYYY");
-losAngelesTime.innerHTML = losAngelesCurrent.format("h:mm:ss") + "<small>" + losAngelesCurrent.format("A") + "</small>";
+losAngelesTime.innerHTML = `${losAngelesCurrent.format("h:mm:ss")}<small> ${losAngelesCurrent.format("A") }</small>`;
 }
 
 let paris = document.querySelector("#paris");
 if (paris){
 let parisDate = paris.querySelector(".date");
 let parisTime = paris.querySelector(".time");
-
 let parisCurrent = moment().tz("Europe/Paris");
+``
 parisDate.innerHTML = parisCurrent.format("Do MMMM YYYY");
-parisTime.innerHTML = parisCurrent.format("h:mm:ss") + "<small>" + parisCurrent.format("A") + "</small>";
+parisTime.innerHTML = `${parisCurrent.format("h:mm:ss")}<small> ${parisCurrent.format("A") }</small>`;
 
+}
 }
 
 function updateCity(event) {
@@ -36,7 +37,7 @@ cities.innerHTML = `
           </div>
           <div class="date">${cityTime.format("Do MMMM YYYY")} </div>
         </div>
-        <div class="time">${cityTime.format("h:mn:ss")}+ "<small> ${cityTime.format("A")} + "</small>"
+        <div class="time">${cityTime.format("h:mm:ss")}<small> ${cityTime.format("A")} </small>
         </div>
       </div> `;
 
