@@ -1,3 +1,5 @@
+function updateTime() {
+
 let losAngeles = document.querySelector("#los-angeles");
 let losAngelesDate = losAngeles.querySelector(".date");
 let losAngelesTime = losAngeles.querySelector(".time");
@@ -10,7 +12,11 @@ let paris = document.querySelector("#paris");
 let parisDate = paris.querySelector(".date");
 let parisTime = paris.querySelector(".time");
 
-
 let parisCurrent = moment().tz("Europe/Paris");
 parisDate.innerHTML = parisCurrent.format("Do MMMM YYYY");
-parisTime.innerHTML = parisCurrent.format("h:mm:ss [<small>]A[</small>]");
+parisTime.innerHTML = parisCurrent.format("h:mm:ss") + "<small>" + parisCurrent.format("A") + "</small>";
+
+}
+
+updateTime ();
+setInterval (updateTime, 1000);
