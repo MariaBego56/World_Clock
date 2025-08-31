@@ -43,7 +43,6 @@ cities.innerHTML = `
 
 }
 
-
 updateTime ();
 setInterval (updateTime, 1000);
 
