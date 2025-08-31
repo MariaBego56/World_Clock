@@ -21,7 +21,7 @@ parisDate.innerHTML = parisCurrent.format("Do MMMM YYYY");
 parisTime.innerHTML = `${parisCurrent.format("h:mm:ss")}<small> ${parisCurrent.format("A") }</small>`;
 
 }
-
+}
 
 function updateCity(event) {
 /* event.target.value */
@@ -50,4 +50,3 @@ setInterval (updateTime, 1000);
 let citiesSelect = document.querySelector("#city-dropdown");
 
 citiesSelect. addEventListener("change", updateCity);
-}
